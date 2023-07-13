@@ -14,8 +14,35 @@ or
 powershell
 ´env/bin/Activate.ps1´ 
 
-# instalar dependencias
+## instalar dependencias
 
 ´´´pip install -r requirements.txt´´
 
+## run server
 
+cambias le diretorios actual para donde se esta el archivo 
+**manage.py** que es la carpeta delivery y ejecutas el priximo comando
+
+```python manage.py run```
+
+## app 
+
+cada app sera idenpendiente de otra, cada una complementara a la 
+otra mas no compartiran ningun modulo interno.
+
+* Home
+Es donde esta gurdada las primeras paginas del proyecto que serian 
+1. pagina de inicio
+2. pagina de contato
+
+* User
+aqui estara todo lo que gerencia cada usuario
+1. login
+2. compras
+3. Personlaizacion
+
+
+# otros 
+
+* static (folder)
+en esta carpeta estara archivos css, js, html que seran utilizados en otras app como por ejemplo base.html ([tamplase](https://docs.djangoproject.com/en/4.2/ref/templates/language/))
