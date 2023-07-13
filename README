@@ -1,0 +1,21 @@
+# crear un entorno virltul
+
+´´´python -m venv env´´´
+activa el entorno virltul
+
+linux
+´source env/bin/activate´ 
+
+windonw
+cmd
+´env/bin/activate´ 
+
+or 
+powershell
+´env/bin/Activate.ps1´ 
+
+# instalar dependencias
+
+´´´pip install -r requirements.txt ´´´
+
+
