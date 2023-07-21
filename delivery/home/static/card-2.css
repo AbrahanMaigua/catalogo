@@ -8,7 +8,17 @@ body {
   background: #f1f1f1;
   margin: 2rem;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .blog-card {
   display: flex;
   flex-direction: column;
@@ -502,3 +512,22 @@ body {
   width: 328px;
   
 }
+
+.border {
+  border: none ;
+  outline:  none
+}
+
+.border input:focus {
+  outline:  none
+}
+.title_input {
+  border: none ;
+  height: 2rem;
+  font-family:  sans-serif ;
+  font-size: 1.7rem;
+}
+.title_input {
+  outline:  none
+}
+

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-sh*kkg8n$&lgg-gntkr%^#0mx7g##^y3i+b0g$@r(!j#w8#og8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.15']
+ALLOWED_HOSTS = ['127.0.0.1','192.168.0.27']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
-    'user',
+    #'user',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'delivery.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR],
+        'DIRS': [BASE_DIR, 'template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,7 +125,7 @@ MEDIA_URL   = '/media/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+APPEND_SLASH=False
 # auth model
 
-AUTH_USER_MODEL = "user.CustomUser"
+#AUTH_USER_MODEL = "user.CustomUser"

@@ -12,15 +12,18 @@
 
   <div class="blog-card">
     <div class="meta">
-      <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+        
+      <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)">
+      <input type="file" name="photo" id="id_photo">
+    </div>
     </div>
     <div class="description">
-      <h1>Manzana</h1>
+      <h1><input class="title_input" type="text" placeholder="Manzanas" id=""></h1>
       <p> </p>
       <form action="{% url 'objcar' %}"  method="post">
         {% csrf_token %}
 
-        <p class="text" >{{form}}  x  kg/8.90 R$ </p>
+        <p class="text" ><input class="border" type="text" placeholder="price" id=""> $</p>
         <p id="1455" class="calculo-price"> <br></p>
 
         <div class="btn" >

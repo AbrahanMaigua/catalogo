@@ -1,29 +1,36 @@
 # crear un entorno virltul
 
-´´´python -m venv env´´´
+```python -m venv env```
+
 activa el entorno virltul
 
 linux
-´source env/bin/activate´ 
+
+```source env/bin/activate``` 
 
 windonw
 cmd
-´env/bin/activate´ 
+
+```env/bin/activate``` 
 
 or 
 powershell
-´env/bin/Activate.ps1´ 
+
+```env/bin/Activate.ps1```
 
 ## instalar dependencias
 
-´´´pip install -r requirements.txt´´
+```pip install -r requirements.txt```
 
 ## run server
+
 
 cambias le diretorios actual para donde se esta el archivo 
 **manage.py** que es la carpeta delivery y ejecutas el priximo comando
 
-```python manage.py run```
+* ```python manage.py makemigrations```
+* ```python manage.py migrate```
+* ```python manage.py runserver```
 
 ## app 
 
